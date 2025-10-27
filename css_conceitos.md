@@ -79,7 +79,6 @@ condição específica é atendida, como o tamanho da tela.
 | **padding** | Espaçamento interno (entre o conteúdo e a borda). |
 | **border** | Define a borda/limite da caixa. |
 | **margin** | Espaçamento externo (entre a borda e outros elementos). |
-| **box-sizing: border-box** | Inclui `padding` e `border` dentro do `width`/`height` (facilita layouts). |
 | **border-radius** | Arredonda os cantos da caixa. |
 | **Mobile First** | Técnica onde se estiliza primeiro para celular e depois para telas maiores. |
 | **@media (Media Query)** | Aplica estilos apenas sob certas condições (ex: largura da tela). |
