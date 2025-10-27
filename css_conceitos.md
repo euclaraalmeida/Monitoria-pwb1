@@ -60,3 +60,31 @@ condição específica é atendida, como o tamanho da tela.
 @media (min-width: 768px) { ... }
 ```
 
+
+###  Resumo de Conceitos de CSS
+
+| **Termo / Comando** | **Definição / Explicação** |
+|----------------------|-----------------------------|
+| **CSS** | Linguagem usada para definir a aparência do HTML. |
+| **CSS Inline** | Estilo aplicado diretamente na tag HTML (atributo `style`). |
+| **CSS Interno** | Estilo definido na tag `<style>` dentro do `<head>`. |
+| **CSS Externo** | Estilo em um arquivo `.css` separado (boa prática). |
+| **Seletor** | Define qual elemento HTML será estilizado. |
+| **Propriedade** | O que será estilizado (ex: `color`, `font-size`). |
+| **Valor** | Como será estilizado (ex: `blue`, `32px`). |
+| **Seletor de Elemento** | Seleciona todas as tags de um tipo (ex: `p`). |
+| **Seletor de ID** | Seleciona o elemento com aquele `id` (ex: `#titulo`). |
+| **Seletor de Classe** | Seleciona todos os elementos com aquela `class` (ex: `.destaque`). |
+| **Seletor Universal** | Seleciona todos os elementos da página (`*`). |
+| **padding** | Espaçamento interno (entre o conteúdo e a borda). |
+| **border** | Define a borda/limite da caixa. |
+| **margin** | Espaçamento externo (entre a borda e outros elementos). |
+| **box-sizing: border-box** | Inclui `padding` e `border` dentro do `width`/`height` (facilita layouts). |
+| **border-radius** | Arredonda os cantos da caixa. |
+| **Mobile First** | Técnica onde se estiliza primeiro para celular e depois para telas maiores. |
+| **@media (Media Query)** | Aplica estilos apenas sob certas condições (ex: largura da tela). |
+| **display: inline-block;** | Faz a caixa ficar lado a lado (como `inline`), mas permite definir `width` e `height` (como `block`). |
+| **vertical-align: top;** | Alinha o topo de elementos `inline-block` de alturas diferentes. |
+
+
+
