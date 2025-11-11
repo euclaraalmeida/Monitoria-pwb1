@@ -1,0 +1,150 @@
+/*
+Alinhar
+grid  -> duas dimensoes como se fosse uma matriz
+flex -> 1 dimensao apenas linhas ou colunas
+    O Pai define as regras do jogo para todos os filhos.
+    Filho quando quer mexer em algo individual 
+
+
+gap: espaçamento entre os outros
+grid template columns : 100px 100px 100px 100px-> alterar a largura das colunas
+grid template row : 100px 100px ... -> alterar a largura das linhas
+
+
+display: flex: Os filhos imediatamente se alinham em uma linha, um ao lado do outro.
+aligm itemns: posição do conteudo mude verticalmente->
+justify-content: Alinha os itens no Eixo Principal.  posição do conteudo mude -> center, space-arount, space- between
+center: Tudo no centro.
+space-between: Espaço entre os itens (ótimo para menus!).
+align-items: Alinha os itens no Eixo Perpendicular.
+flex-start: Tudo no topo.
+center: Tudo no meio (verticalmente).
+
+flex
+flex-wrap: wrap: Para que eles quebrem para a linha de baixo (como em cards num celular)
+
+*/
+
+/*
+.Dias {
+  display: flex;
+  border: 2px solid blue; /* Borda para ver o container */
+  
+  /* TESTE UM DE CADA VEZ ABAIXO: */
+/*     justify-content: flex-start ->Padrão. Tudo colado no início (esquerda) */
+  /* justify-content: center;   /* Tudo agrupado no centro */
+  /* justify-content: space-between; */ /* Espaço *entre* eles */
+  /* justify-content: space-around;  /* Espaço *ao redor* de cada item */
+  /* justify-content: space-evenly;  /* Espaço *igual* em todo lugar */
+  /*  justify-content:  space-evenly /*
+
+
+    ;
+
+    ;
+}
+*/
+
+.Card {
+  background-color: brown;
+  color: white;
+  width: 100px;  /* Tamanho fixo para vermos o efeito */
+  height: 100px; /* Tamanho fixo para vermos o efeito */
+  
+ 
+}
+
+.Dias {
+display: flex;
+  border: 2px solid blue;
+  height: 300px; /* IMPORTANTE: Dê altura para o Pai */
+  
+  /* TESTE UM DE CADA VEZ ABAIXO: */
+  /*align-items: flex-start;  /* Padrão. Todos no topo */
+  /* align-items: flex-end; */    /* Todos na base. */
+  /* align-items: center; */    /* Todos no meio (verticalmente). */
+  /* align-items: stretch; */   /* Padrão se os filhos NÃO tiverem altura. Eles esticam.*/
+  align-items: center; 
+  justify-content: center;
+gap: 20px;
+
+  } 
+/*
+  /*combo perfeito
+  .Dias {
+  display: flex;
+  height: 300px;
+  justify-content: center; /* Alinha horizontal */
+  /*align-items: center;     /* Alinha vertical } */
+/*
+  .Dias {
+  display: flex;
+  border: 2px solid blue;
+  /* (Pode tirar a altura de 300px agora) */
+
+  /* TESTE UM DE CADA VEZ ABAIXO: */
+  /* (Diminua a janela do navegador para ver o efeito) */
+
+  /*flex-wrap: nowrap; /* Padrão. Os filhos vão esmagar ou vazar */
+  /* flex-wrap: wrap; */   /* Opa! Quando não cabe, quebra a linha. }*/
+
+
+
+  /*
+ GRID
+ 
+ 
+ .Dias {
+  display: grid;
+  border: 2px solid blue; /* Borda para ver o container */
+  
+  /* TESTE UM DE CADA VEZ ABAIXO: */
+  
+  /* 1. Sem colunas (Padrão): 
+     Os itens empilham. Estranho, né? */
+  
+  /* 2. Colunas Fixas: 
+     Três colunas de 100px. E o resto? Espaço vazio. */
+  /* grid-template-columns: 100px 100px 100px; */
+
+  /* 3. Colunas com Fração (fr):
+     A "mágica" do Grid. 1fr = 1 fração do espaço livre.
+     Três colunas iguais que ocupam TODO o espaço. */
+  /*grid-template-columns: 1fr 1fr 1fr; 
+  
+  /* 4. O jeito moderno de fazer o de cima: */
+  /* grid-template-columns: repeat(3, 1fr); */ 
+  
+  /* 5. Colunas Mistas:
+     Uma sidebar de 100px e o resto dividido em 2. */
+  /* grid-template-columns: 100px 1fr 1fr; }*/ 
+
+
+  /*
+  .Dias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 2px solid blue;
+  
+  /* TESTE ISSO: */
+  /*gap: 20px; /* Cria um espaço de 20px ENTRE todas as linhas e colunas. 
+               Adeus, margin! }*/
+
+
+/*.Dias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 células flexíveis */
+ /* height: 300px; /* Dê altura para o Pai */
+ /* border: 2px solid blue;
+  
+  /* TESTE UM DE CADA VEZ: */
+  
+  /* Alinhamento Horizontal DENTRO da célula: */
+ /* justify-items: start;   /* Padrão. Cola na esquerda da célula. */
+  /* justify-items: end; */     /* Cola na direita da célula. */
+  /* justify-items: center; */  /* Centraliza horizontalmente na célula. */
+  
+  /* Alinhamento Vertical DENTRO da célula: */
+  /*align-items: start;     /* Padrão. Cola no topo da célula. */
+  /* align-items: end; */       /* Cola na base da célula. */
+  /* align-items: center; */    /* Centraliza verticalmente na célula.^} */
